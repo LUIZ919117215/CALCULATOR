@@ -1,0 +1,22 @@
+section#cell main#tela {
+    width: 430px;
+    height: 200px;
+    background-color: #669e9e;
+}
+section#cell menu#teclado {
+    display: flex;
+    width: 390px;
+    height: 40px;
+    background-color: #a358e9;
+}
+
+div.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background: #669e9e;
+    border: 2px solid black;
+}
+
