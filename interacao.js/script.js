@@ -58,45 +58,83 @@ let butoes = document.querySelectorAll(".btn")
 class Calcular {
     constructor (botao) {
         this.nomeDoButao = botao
-        this.escreverNaTela = (arr) => {
-            
-            console.log(this.numerosCapturados)
-            telaDeCalc.innerHTML = this.numerosCapturados
-
-            return this.nomeDoButao
+        this.escreverNaTela = () => { 
+            telaDeCalc.innerHTML += this.nomeDoButao
         }
-        this.numerosCapturados = [].push(this.escreverNaTela(this.nomeDoButao))
     }
 }
 
-//Numeros=============================================================
-let button7 = new Calcular(7)
+
+//Numeros=================================================================
+let button7 = new Calcular('7')
 butoes[3].addEventListener('click',() => button7.escreverNaTela())
 
-let button8 = new Calcular(8)
+let button8 = new Calcular('8')
 butoes[4].addEventListener('click',() => button8.escreverNaTela())
 
-let button9 = new Calcular(9)
+let button9 = new Calcular('9')
 butoes[5].addEventListener('click',() => button9.escreverNaTela())
 
-let button4 = new Calcular(4)
+let button4 = new Calcular('4')
 butoes[7].addEventListener('click',() => button4.escreverNaTela())
 
-let button5 = new Calcular(5)
+let button5 = new Calcular('5')
 butoes[8].addEventListener('click',() => button5.escreverNaTela())
 
-let button6 = new Calcular(6)
+let button6 = new Calcular('6')
 butoes[9].addEventListener('click',() => button6.escreverNaTela())
 
-let button1 = new Calcular(1)
+let button1 = new Calcular('1')
 butoes[11].addEventListener('click',() => button1.escreverNaTela())
 
-let button2 = new Calcular(2)
+let button2 = new Calcular('2')
 butoes[12].addEventListener('click',() => button2.escreverNaTela())
 
-let button3 = new Calcular(3)
+let button3 = new Calcular('3')
 butoes[13].addEventListener('click',() => button3.escreverNaTela())
 
-let button0 = new Calcular(0)
+let button0 = new Calcular('0')
 butoes[15].addEventListener('click',() => button0.escreverNaTela())
-//Operadores==============================================
+
+
+//Operadores==============================================================
+let somar = new Calcular('+') 
+butoes[14].addEventListener('click', () => somar.escreverNaTela())
+
+let subtrair = new Calcular('-') 
+butoes[10].addEventListener('click', () => subtrair.escreverNaTela())
+
+let multiplicar = new Calcular('*') 
+butoes[6].addEventListener('click', () => multiplicar.escreverNaTela())
+
+let dividir = new Calcular('/') 
+butoes[2].addEventListener('click', () => dividir.escreverNaTela())
+
+let ponto = new Calcular('.') 
+butoes[16].addEventListener('click', () => ponto.escreverNaTela())
+
+
+//CLEAR/DELETE============================================================
+
+let aCLEAR = new Calcular('')
+aCLEAR.escreverNaTela = () => {
+    telaDeCalc.innerHTML = ""
+    telaResult.innerHTML = ""
+}
+butoes[0].addEventListener('click', () => aCLEAR.escreverNaTela())
+
+let del = new Calcular('')
+del.escreverNaTela = () => {
+    console.log(telaDeCalc.innerHTML)
+    let filaDeNum = telaDeCalc.innerHTML
+    telaDeCalc.innerHTML = filaDeNum.substring(0, filaDeNum.length -1)
+}
+butoes[1].addEventListener('click', () => del.escreverNaTela())
+//RES=====================================================================
+
+let igual = new Calcular('')
+igual.escreverNaTela = () => {
+    telaResult.innerHTML = eval(telaDeCalc.innerHTML)
+}
+
+butoes[17].addEventListener('click', () => igual.escreverNaTela())

@@ -95,39 +95,6 @@ main#cell section#tela aside#blackmode div#sol {
     border-radius: 50%;
 }
 
-/* main#cell section#tela aside#blackmode div#sol:hover {
-    animation-name: prime;
-    animation-duration: .7s;
-}
-
-
-@keyframes prime {
-    0% {
-        transform: translateX(0);
-
-    }
-
-    100% {
-        transform: translateX(125%);
-    }
-
-}
-@keyframes secund {
-    0% {
-        justify-content: end;
-
-    }
-
-    100% {
-        justify-content: start;
-    }
-
-} */
-
-
-
-
-
 main#cell section#tela aside#blackmode div#sol span {
     color: white;
     margin: auto;
