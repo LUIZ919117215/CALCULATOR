@@ -28,12 +28,12 @@ para um bytecode que é interpretado por uma máqui-
 virtual (Java Virtual machine, abreviada JVM).
 
 
-`{{{{{{{{{{ffdsfdsfdsfdsfdsfdsfdsfdsf}}}}}}}}}}`
+O Cerco de Guînes ocorreu de maio a julho de 1532,
+quando um exécito francês em Guînes, que havia 
+sido tomado pelos ingleses em janeiro anterior.
+O cerco fez parte da Guerra dos Cem Anos e ocorreu
+durante a precária e pouco trégua de Calais
+(1347-1355).
 
-
-
-htrhtregçreggegrrgrjieoghewohi
-
-
-
-
+O castelo altamente fortificado tinha sido conquis
+tado pelos durante um per

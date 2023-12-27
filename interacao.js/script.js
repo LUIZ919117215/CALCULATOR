@@ -1,12 +1,11 @@
 'use strtict'
 
 let sol = document.querySelector("aside#blackmode")
-
-sol.addEventListener("click", mode)
+sol.addEventListener("click", modeBlack)
 
 let i = 0
 
-function mode() {
+function modeBlack() {
     let screen = document.querySelector('section#tela')
     let cell = document.querySelector("main#cell")
     let control = document.querySelector('section#controle')
@@ -48,32 +47,56 @@ function mode() {
 
     i++
 }
+
 //Telas da Calculadora
 let telaDeCalc = document.querySelector('div#calc')
 let telaResult = document.querySelector("div#res")
 //Botoes da Calculadora
-let butaoQuatro = document.querySelectorAll("div.btn")[7]
-let  botaoCinco = document.querySelectorAll("div.btn")[8]
+let butoes = document.querySelectorAll(".btn")
 //Para criar o loop
 
 class Calcular {
     constructor (botao) {
         this.nomeDoButao = botao
-        this.escrever = function (...tv) {
-            let arr = [...tv]
+        this.escreverNaTela = (arr) => {
+            
+            console.log(this.numerosCapturados)
+            telaDeCalc.innerHTML = this.numerosCapturados
 
-
-            arr.forEach((numberClicks) => {telaDeCalc.innerHTML = numberClicks
-            arr.unshift(1)})
+            return this.nomeDoButao
         }
-        
+        this.numerosCapturados = [].push(this.escreverNaTela(this.nomeDoButao))
     }
-    
 }
 
+//Numeros=============================================================
+let button7 = new Calcular(7)
+butoes[3].addEventListener('click',() => button7.escreverNaTela())
+
+let button8 = new Calcular(8)
+butoes[4].addEventListener('click',() => button8.escreverNaTela())
+
+let button9 = new Calcular(9)
+butoes[5].addEventListener('click',() => button9.escreverNaTela())
+
 let button4 = new Calcular(4)
-butaoQuatro.addEventListener('click', () => button4.escrever(4))
+butoes[7].addEventListener('click',() => button4.escreverNaTela())
 
 let button5 = new Calcular(5)
-botaoCinco.addEventListener('click',() => button5.escrever(5))
+butoes[8].addEventListener('click',() => button5.escreverNaTela())
 
+let button6 = new Calcular(6)
+butoes[9].addEventListener('click',() => button6.escreverNaTela())
+
+let button1 = new Calcular(1)
+butoes[11].addEventListener('click',() => button1.escreverNaTela())
+
+let button2 = new Calcular(2)
+butoes[12].addEventListener('click',() => button2.escreverNaTela())
+
+let button3 = new Calcular(3)
+butoes[13].addEventListener('click',() => button3.escreverNaTela())
+
+let button0 = new Calcular(0)
+butoes[15].addEventListener('click',() => button0.escreverNaTela())
+//Operadores==============================================
