@@ -53,7 +53,7 @@ let telaDeCalc = document.querySelector('div#calc')
 let telaResult = document.querySelector("div#res")
 //Botoes da Calculadora
 let butoes = document.querySelectorAll(".btn")
-//Para criar o loop
+//Para criar o objeto
 
 class Calcular {
     constructor (botao) {
@@ -113,9 +113,7 @@ butoes[2].addEventListener('click', () => dividir.escreverNaTela())
 let ponto = new Calcular('.') 
 butoes[16].addEventListener('click', () => ponto.escreverNaTela())
 
-
 //CLEAR/DELETE============================================================
-
 let aCLEAR = new Calcular('')
 aCLEAR.escreverNaTela = () => {
     telaDeCalc.innerHTML = ""
@@ -130,8 +128,8 @@ del.escreverNaTela = () => {
     telaDeCalc.innerHTML = filaDeNum.substring(0, filaDeNum.length -1)
 }
 butoes[1].addEventListener('click', () => del.escreverNaTela())
-//RES=====================================================================
 
+//RES=====================================================================
 let igual = new Calcular('')
 igual.escreverNaTela = () => {
     telaResult.innerHTML = eval(telaDeCalc.innerHTML)

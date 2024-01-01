@@ -17,23 +17,12 @@ canismo JavaScript dedicado para executá-lo.
 
 =====================================================================================================================
 
-Java é uma linguagem de programação orientada a 
-objetos desenvolvida na década de 90 por uma equi-
-pe de programadores chefiada por James Gosling,
-na empresa Sun Microsystems, que em 2008 foi ad-
-quirido pela empresa Oracle Corporation.
-Diferente das linguagens de programação modernas,
-que são compiladas para código nativo, Java é com-
-para um bytecode que é interpretado por uma máqui-
-virtual (Java Virtual machine, abreviada JVM).
+HTML (abreviação para a expressão inglesa Hyper Text Markup 
+Language, que significa: "Linguagem de Marcação de Hipertexto")
+é uma linguagem de marcação utilizada na contrução de páginas na
+Web. A tecnologia é fruto da junção entre os padões HyTime e 
+SGML.
 
-
-O Cerco de Guînes ocorreu de maio a julho de 1532,
-quando um exécito francês em Guînes, que havia 
-sido tomado pelos ingleses em janeiro anterior.
-O cerco fez parte da Guerra dos Cem Anos e ocorreu
-durante a precária e pouco trégua de Calais
-(1347-1355).
-
-O castelo altamente fortificado tinha sido conquis
-tado pelos durante um per
+HyTime é um padão para a representação estruturada de hipermídia
+e conteúdo baseado em tempo. Um documento é visto como um conju-
+-nto de eventos concorrentes dependentes de tempo (como áudio.)
